@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from "./components/Card";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className='containier'>
+      <Card img='https://wikiparazit.ru/wp-content/uploads/2020/08/evropeyskaya-koshka-dikiy-kot1.jpg'>
+        <h5 className='card-title'>Card title</h5>
+        <p className='card-text'>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+        <a href='#' className='btn btn-primary'>
+          Go somewhere
         </a>
-      </header>
+      </Card>
+      <Card>
+        <h5 className='card-title'>Card title</h5>
+        <p className='card-text'>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href='#' className='btn btn-primary'>
+          Go somewhere
+        </a>
+      </Card>
     </div>
   );
 }
